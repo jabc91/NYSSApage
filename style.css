@@ -2,7 +2,7 @@ body {
   font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #f9f3e7, #f0e4d2); /* Fondo cálido */
+  background: linear-gradient(to bottom, #f9f3e7, #f0e4d2);
   color: #3a3a3a;
   line-height: 1.8;
 }
@@ -13,14 +13,12 @@ header {
   padding: 3rem 2rem;
   color: #3a3a3a;
 }
-
 header h1 {
   font-size: 3rem;
   margin: 0;
   font-weight: 700;
   letter-spacing: 2px;
 }
-
 header p {
   font-size: 1.2rem;
   margin-top: 1rem;
@@ -36,7 +34,6 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
 nav a {
   margin: 0 20px;
   text-decoration: none;
@@ -44,7 +41,6 @@ nav a {
   font-weight: 600;
   transition: color 0.3s ease;
 }
-
 nav a:hover {
   color: #d4af37;
 }
@@ -54,13 +50,13 @@ section {
   max-width: 1000px;
   margin: auto;
 }
-
 section h2 {
   color: #d4af37;
   font-size: 2rem;
   border-bottom: 2px solid #d4af37;
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
+  animation: fadeInDown 1s ease;
 }
 
 .tratamiento {
@@ -70,18 +66,16 @@ section h2 {
   margin-bottom: 2rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease;
 }
-
 .tratamiento:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
-
 .tratamiento h3 {
   color: #3a3a3a;
   margin-bottom: 0.5rem;
 }
-
 .beneficios, .cuidados {
   font-size: 0.95rem;
   margin-left: 1rem;
@@ -95,32 +89,54 @@ footer {
   padding: 2rem;
   margin-top: 3rem;
 }
-
 footer a {
   color: #d4af37;
   text-decoration: none;
   font-weight: bold;
 }
-
 footer a:hover {
   text-decoration: underline;
 }
 
-/* Animaciones suaves */
-section h2 {
-  animation: fadeInDown 1s ease;
-}
-
-.tratamiento {
-  animation: fadeInUp 1s ease;
-}
-
+/* Animaciones */
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  section {
+    padding: 2rem 1rem;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+  .tratamiento {
+    padding: 1rem;
+  }
+  .beneficios, .cuidados {
+    margin-left: 0;
+    font-size: 0.9rem;
+    text-align: left;
+  }
 }
