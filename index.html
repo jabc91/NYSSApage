@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYSSA | Bienestar & Belleza</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #a8e6cf, #dcedc1);
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #2e4a3f;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2e4a3f;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      color: #a8e6cf;
+      transform: scale(1.1);
+    }
+    section {
+      padding: 2.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #2e4a3f;
+      border-bottom: 3px solid #a8e6cf;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    .tratamiento {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      background: #fafafa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .tratamiento:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .tratamiento .imagen img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .tratamiento .info {
+      flex: 1;
+    }
+    footer {
+      background-color: #2e4a3f;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #a8e6cf;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✨ NYSSA ✨</h1>
+    <p>Resalta tu belleza, cuida tu salud y siéntete renovado en cada sesión</p>
+  </header>
+
+  <nav>
+    <a href="#bienestar">Bienestar & Detox</a>
+    <a href="#faciales">Faciales</a>
+    <a href="#masajes">Masajes</a>
+    <a href="#tecnologia">Tecnología Estética</a>
+    <a href="#especiales">Especiales</a>
+    <a href="#reservas">Reservas</a>
+  </nav>
+
+  <section id="bienestar">
+    <h2>🌿 Bienestar y Detox</h2>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/desio.jpeg" alt="Desintoxicación iónica">
+      </div>
+      <div class="info">
+        <h3> Desintoxicación iónica</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Eliminación de toxinas a través de los pies  
+- Relajación y reducción del estrés  
+- Mejora del sueño  
+- Sensación de ligereza y bienestar general  
+- Estimulación de la circulación</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Hacer sesiones bajo supervisión profesional  
+- Evitar si tienes marcapasos, embarazo o problemas cardíacos  
+- Mantener buena hidratación antes y después  
+- No exceder la frecuencia recomendada por el especialista</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faciales">
+    <h2>💎 Tratamientos Faciales</h2>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/alta.jpeg" alt="Alta frecuencia">
+      </div>
+      <div class="info">
+        <h3> Alta frecuencia</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Estimula la circulación sanguínea y oxigenación de la piel  
+- Favorece la producción de colágeno y elastina  
+- Ayuda a disminuir acné y bacterias superficiales  
+- Mejora la luminosidad y firmeza del rostro</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar exposición solar directa después del tratamiento  
+- Usar protector solar diariamente  
+- Mantener la piel hidratada con productos suaves  
+- No aplicar maquillaje inmediatamente después de la sesión</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/exo.jpeg" alt="Exosomas de ADN de salmón">
+      </div>
+      <div class="info">
+        <h3> Exosomas de ADN de salmón</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Regeneración celular  
+- Más colágeno y elastina  
+- Hidratación profunda  
+- Antiinflamatorio y antioxidante  
+- Rejuvenecimiento visible</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo (usar protector)  
+- No maquillaje pesado inmediato  
+- Hidratación constante  
+- Evitar exfoliaciones o láser 1 semana  
+- Seguir indicaciones del especialista</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/micro.jpeg" alt="Micro agujas">
+      </div>
+      <div class="info">
+        <h3> Micro agujas </h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Estimula la producción de colágeno y elastina  
+- Mejora textura y firmeza de la piel  
+- Reduce cicatrices de acné y estrías  
+- Disminuye líneas finas y arrugas  
+- Favorece la absorción de productos tópicos</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector solar  
+- No aplicar maquillaje pesado las primeras 24 h  
+- Mantener hidratación constante  
+- Evitar exfoliaciones o tratamientos agresivos por unos días  
+- Seguir las recomendaciones del especialista </p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/bbg.jpeg" alt="BB Glow">
+      </div>
+      <div class="info">
+        <h3> BB Glow </h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Efecto de piel más uniforme y luminosa  
+- Disminuye manchas, pecas y cicatrices leves  
+- Atenúa líneas finas y poros dilatados  
+- Hidratación y nutrición profunda  
+- Apariencia de “piel maquillada” sin maquillaje</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector solar  
+- No maquillaje pesado las primeras 24–48 h  
+- Mantener hidratación constante  
+- Evitar exfoliaciones o tratamientos agresivos por unos días  
+- Seguir las recomendaciones del especialista</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/bbl.jpeg" alt="BB lips">
+      </div>
+      <div class="info">
+        <h3> BB Lips </h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Labios más hidratados y nutridos  
+- Color uniforme y efecto de “labios maquillados” natural  
+- Atenúa resequedad y pequeñas imperfecciones  
+- Mejora la textura y suavidad  
+- Resultado semipermanente con aspecto saludable</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector labial con SPF  
+- No aplicar maquillaje ni labiales pesados las primeras 24–48 h  
+- Mantener hidratación constante con bálsamos suaves  
+- Evitar comidas muy calientes o picantes inmediatamente después  
+- Seguir las recomendaciones del especialista</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/derma.jpeg" alt="Limpieza facial con demaplaning">
+      </div>
+      <div class="info">
+        <h3> Limpieza facial con demaplaning </h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Elimina células muertas y vello fino (peach fuzz)  
+- Mejora la textura y luminosidad de la piel  
+- Favorece la absorción de productos cosméticos  
+- Deja la piel más suave y uniforme  
+- Resultados inmediatos y sin tiempo de recuperación</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector solar  
+- No aplicar maquillaje pesado las primeras 24 h  
+- Mantener hidratación constante  
+- Evitar exfoliaciones o tratamientos agresivos por unos días  
+- Seguir las recomendaciones del especialista</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/vapoz.jpeg" alt="Vapor de ozono">
+      </div>
+      <div class="info">
+        <h3> Vapor de ozono</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Limpieza profunda de poros  
+- Eliminación de impurezas y exceso de grasa  
+- Hidratación y suavidad de la piel  
+- Estimula la circulación sanguínea  
+- Efecto relajante y preparación para otros tratamientos</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar exposición solar directa después de la sesión  
+- Usar protector solar diariamente  
+- Mantener hidratación constante  
+- No aplicar maquillaje pesado inmediatamente  
+- Seguir las recomendaciones del especialista</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="masajes">
+    <h2>💆 Masajes y Modelado Corporal</h2>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/relajante.jpeg" alt="Masaje relajante">
+      </div>
+      <div class="info">
+        <h3> Masaje relajante</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Reduce el estrés y la ansiedad  
+- Mejora la circulación sanguínea  
+- Relaja músculos y alivia tensiones  
+- Favorece el descanso y la calidad del sueño  
+- Sensación general de bienestar</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar comidas pesadas justo antes de la sesión  
+- Mantener buena hidratación después del masaje  
+- Descansar y no realizar esfuerzos físicos intensos inmediatamente  
+- Seguir las recomendaciones del terapeuta</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/masde.jpeg" alt="Masaje deportivo">
+      </div>
+      <div class="info">
+        <h3> Masaje deportivo</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Reduce la tensión muscular después del ejercicio  
+- Previene lesiones y favorece la recuperación  
+- Mejora la circulación y oxigenación de los tejidos  
+- Aumenta la flexibilidad y el rendimiento físico  
+- Alivia dolores musculares y contracturas</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar entrenamientos intensos justo después de la sesión  
+- Mantener buena hidratación para eliminar toxinas  
+- Descansar y permitir la recuperación muscular  
+- Seguir la frecuencia recomendada por el especialista  
+- Informar al terapeuta sobre lesiones o molestias previas</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/bra.jpeg" alt="Técnica de drenaje linfático brasileño con cierre de costilla">
+      </div>
+      <div class="info">
+        <h3> Técnica de drenaje linfático brasileño con cierre de costilla</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Reduce la retención de líquidos y la hinchazón  
+- Estimula la circulación linfática y sanguínea  
+- Moldea la silueta y define la zona abdominal  
+- Favorece la eliminación de toxinas  
+- Sensación de ligereza y bienestar inmediato  
+</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Mantener buena hidratación para potenciar el drenaje  
+- Evitar comidas muy pesadas justo antes o después de la sesión  
+- No realizar esfuerzos físicos intensos inmediatamente después  
+- Seguir la frecuencia recomendada por el especialista  
+- Informar al terapeuta sobre condiciones médicas previas</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/glu.jpeg" alt="Marcación abdominal y masaje moldeador de gluteos">
+      </div>
+      <div class="info">
+        <h3> Marcación abdominal y masaje moldeador de gluteos</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Define y resalta la zona abdominal  
+- Reduce líquidos y toxinas acumuladas  
+- Mejora la circulación y oxigenación  
+- Sensación de firmeza y tonificación inmediata  
+- Levanta y da forma a los glúteos  
+- Reduce celulitis y mejora la textura de la piel  
+- Estimula la circulación y el drenaje linfático  
+- Apariencia más firme y tonificada</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Mantener buena hidratación  
+- Evitar comidas pesadas justo antes o después  
+- No realizar esfuerzos físicos intensos inmediatamente  
+- Seguir la frecuencia indicada por el especialista</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologia">
+    <h2>⚙️ Tecnología Estética</h2>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/cav.jpeg" alt="Cavitador">
+      </div>
+      <div class="info">
+        <h3> Cavitador</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Reduce grasa localizada sin cirugía  
+- Moldea y define la silueta  
+- Favorece la eliminación de toxinas y líquidos  
+- Mejora la apariencia de celulitis  
+- Resultados visibles desde pocas sesiones</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Mantener buena hidratación antes y después  
+- Evitar comidas muy grasas inmediatamente después  
+- No realizar ejercicio intenso justo tras la sesión  
+- Seguir la frecuencia indicada por el especialista  
+- Informar sobre condiciones médicas previas</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/rad.jpeg" alt="Radiofrecuencia">
+      </div>
+      <div class="info">
+        <h3> Radiofrecuencia</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Estimula la producción de colágeno y elastina  
+- Mejora la firmeza y elasticidad de la piel  
+- Reduce líneas finas y arrugas  
+- Favorece la circulación y oxigenación de tejidos  
+- Efecto reafirmante y rejuvenecedor visible</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar exposición solar directa y usar protector solar  
+- Mantener hidratación constante  
+- No aplicar maquillaje pesado inmediatamente después  
+- Evitar tratamientos agresivos (peelings, láser) por unos días  
+- Seguir las recomendaciones del especialista</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/vac.jpeg" alt="Vacum">
+      </div>
+      <div class="info">
+        <h3> Cavitador</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Reduce celulitis y grasa localizada  
+- Moldea y tonifica la silueta  
+- Estimula la circulación sanguínea y linfática  
+- Favorece la eliminación de toxinas  
+- Mejora la apariencia y firmeza de la piel</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Mantener buena hidratación antes y después  
+- Evitar comidas muy pesadas inmediatamente después  
+- No realizar ejercicio intenso justo tras la sesión  
+- Seguir la frecuencia indicada por el especialista  
+- Informar sobre condiciones médicas previas</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="especiales">
+    <h2>🌸 Tratamientos Especiales</h2>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/exoestr.jpeg" alt="Antiestrías con ADN de salmón">
+      </div>
+      <div class="info">
+        <h3> Antiestrías con ADN de salmón</h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Regeneración celular profunda en zonas con estrías  
+- Estimula colágeno y elastina para mejorar firmeza  
+- Atenúa la apariencia de estrías recientes y antiguas  
+- Hidratación intensa y reparación de la piel dañada  
+- Mejora la textura y uniformidad cutánea</p>
+        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector solar  
+- Mantener hidratación constante con productos suaves  
+- No aplicar exfoliaciones ni tratamientos agresivos en la zona por unos días  
+- Seguir la frecuencia y pautas indicadas por el especialista  
+- Ser constante en las sesiones para mejores resultados</p>
+      </div>
+    </div>
+    <div class="tratamiento">
+      <div class="imagen">
+        <img src="tratamientos/exfc.jpeg" alt="Exfolicion corporal completa">
+      </div>
+      <div class="info">
+        <h3> Exfoliacion corporal completa </h3>
+        <p class="beneficios"><strong>Beneficios:</strong> Elimina células muertas y renueva la piel  
+- Mejora la textura y luminosidad  
+- Favorece la absorción de productos hidratantes y nutritivos  
+- Estimula la circulación sanguínea  
+- Sensación de suavidad y frescura inmediata</p>
+          <p class="cuidados"><strong>Cuidados:</strong> Evitar exposición solar directa y usar protector solar  
+- Mantener hidratación constante  
+- No aplicar productos agresivos (peelings fuertes, ácidos) en los días siguientes  
+- Seguir la frecuencia recomendada por el especialista  
+- Usar cremas nutritivas para prolongar el efecto </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="reservas">
+    <h2>📞 Reservas</h2>
+    <p>Reserva tu espacio al <strong>6084-1047</strong></p>
+    <p>O directamente en WhatsApp: <a href="https://wa.me/c/50660841047" target="_blank">Haz tu reserva aquí</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 NYSSA - Bienestar y Belleza - Derechos Reservados </p>
+    <p><a href
