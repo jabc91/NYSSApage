@@ -13,6 +13,8 @@
       background-color: #fdfdfd;
       color: #333;
       line-height: 1.6;
+      max-width: 100%;
+      overflow-x: hidden;
     }
     header {
       background: linear-gradient(to right, #a8e6cf, #dcedc1);
@@ -20,7 +22,7 @@
       padding: 3rem 2rem;
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: #2e4a3f;
       margin: 0;
       letter-spacing: 2px;
@@ -54,7 +56,7 @@
       border-bottom: 3px solid #a8e6cf;
       padding-bottom: 0.5rem;
       margin-bottom: 1.5rem;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     .tratamiento {
       display: flex;
@@ -72,7 +74,7 @@
       box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     }
     .tratamiento .imagen img {
-      width: 200px;
+      max-width: 100%;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -95,6 +97,29 @@
     }
     footer a:hover {
       color: #fff;
+    }
+
+    /* 🔧 Responsividad */
+    @media (max-width: 768px) {
+      .tratamiento {
+        flex-direction: column;
+        text-align: center;
+      }
+      .tratamiento .imagen img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.4rem;
+      }
     }
   </style>
 </head>
