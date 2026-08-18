@@ -1,467 +1,2401 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NYSSA | Bienestar & Belleza</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fdfdfd;
-      color: #333;
-      line-height: 1.6;
-      max-width: 100%;
-      overflow-x: hidden;
-    }
-    header {
-      background: linear-gradient(to right, #a8e6cf, #dcedc1);
-      text-align: center;
-      padding: 3rem 2rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #2e4a3f;
-      margin: 0;
-      letter-spacing: 2px;
-    }
-    nav {
-      background-color: #f0f0f0;
-      padding: 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #2e4a3f;
-      font-weight: bold;
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-    nav a:hover {
-      color: #a8e6cf;
-      transform: scale(1.1);
-    }
-    section {
-      padding: 2.5rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      color: #2e4a3f;
-      border-bottom: 3px solid #a8e6cf;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
-      font-size: 1.6rem;
-    }
-    .tratamiento {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-      background: #fafafa;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .tratamiento:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    }
-    .tratamiento .imagen img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .tratamiento .info {
-      flex: 1;
-    }
-    footer {
-      background-color: #2e4a3f;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-      margin-top: 3rem;
-    }
-    footer a {
-      color: #a8e6cf;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    footer a:hover {
-      color: #fff;
-    }
+    <meta charset="UTF-8">
 
-    /* 🔧 Responsividad */
-    @media (max-width: 768px) {
-      .tratamiento {
-        flex-direction: column;
-        text-align: center;
-      }
-      .tratamiento .imagen img {
-        width: 100%;
-        max-width: 300px;
-        margin: auto;
-      }
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
-      section h2 {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NYSSA Bienestar & Belleza: tratamientos faciales, masajes, modelado corporal, tecnología estética y bienestar en Costa Rica."
+    >
+
+    <meta
+        name="keywords"
+        content="NYSSA, bienestar, belleza, tratamientos faciales, masajes, cavitación, radiofrecuencia, Costa Rica"
+    >
+
+    <meta name="theme-color" content="#173f38">
+
+    <title>NYSSA | Bienestar & Belleza</title>
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Íconos -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <img src="tratamientos/logo.jpeg" alt="logo" width="200" height="200" style="display: block; margin: auto;">
-    <p>✨Resalta tu belleza, cuida tu salud y siéntete renovado en cada sesión✨</p>
-  </header>
 
-  <nav>
-    <a href="#bienestar">Bienestar & Detox</a>
-    <a href="#faciales">Faciales</a>
-    <a href="#masajes">Masajes</a>
-    <a href="#tecnologia">Tecnología Estética</a>
-    <a href="#especiales">Especiales</a>
-    <a href="#reservas">Reservas</a>
-  </nav>
+    <!-- Barra superior -->
 
-  <section id="bienestar">
-    <h2>🌿 Bienestar y Detox</h2>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/desio.jpeg" alt="Desintoxicación iónica">
-      </div>
-      <div class="info">
-        <h3> Desintoxicación iónica</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Eliminación de toxinas a través de los pies  
-- Relajación y reducción del estrés  
-- Mejora del sueño  
-- Sensación de ligereza y bienestar general  
-- Estimulación de la circulación</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Hacer sesiones bajo supervisión profesional  
-- Evitar si tienes marcapasos, embarazo o problemas cardíacos  
-- Mantener buena hidratación antes y después  
-- No exceder la frecuencia recomendada por el especialista</p>
-      </div>
-    </div>
-  </section>
+    <div class="topbar">
+        <div class="topbar__container">
 
-  <section id="faciales">
-    <h2>💎 Tratamientos Faciales</h2>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/alta.jpeg" alt="Alta frecuencia">
-      </div>
-      <div class="info">
-        <h3> Alta frecuencia</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Estimula la circulación sanguínea y oxigenación de la piel  
-- Favorece la producción de colágeno y elastina  
-- Ayuda a disminuir acné y bacterias superficiales  
-- Mejora la luminosidad y firmeza del rostro</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar exposición solar directa después del tratamiento  
-- Usar protector solar diariamente  
-- Mantener la piel hidratada con productos suaves  
-- No aplicar maquillaje inmediatamente después de la sesión</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/exo.jpeg" alt="Exosomas de ADN de salmón">
-      </div>
-      <div class="info">
-        <h3> Exosomas de ADN de salmón</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Regeneración celular  
-- Más colágeno y elastina  
-- Hidratación profunda  
-- Antiinflamatorio y antioxidante  
-- Rejuvenecimiento visible</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo (usar protector)  
-- No maquillaje pesado inmediato  
-- Hidratación constante  
-- Evitar exfoliaciones o láser 1 semana  
-- Seguir indicaciones del especialista</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/micro.jpeg" alt="Micro agujas">
-      </div>
-      <div class="info">
-        <h3> Micro agujas </h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Estimula la producción de colágeno y elastina  
-- Mejora textura y firmeza de la piel  
-- Reduce cicatrices de acné y estrías  
-- Disminuye líneas finas y arrugas  
-- Favorece la absorción de productos tópicos</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector solar  
-- No aplicar maquillaje pesado las primeras 24 h  
-- Mantener hidratación constante  
-- Evitar exfoliaciones o tratamientos agresivos por unos días  
-- Seguir las recomendaciones del especialista </p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/bbg.jpeg" alt="BB Glow">
-      </div>
-      <div class="info">
-        <h3> BB Glow </h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Efecto de piel más uniforme y luminosa  
-- Disminuye manchas, pecas y cicatrices leves  
-- Atenúa líneas finas y poros dilatados  
-- Hidratación y nutrición profunda  
-- Apariencia de “piel maquillada” sin maquillaje</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector solar  
-- No maquillaje pesado las primeras 24–48 h  
-- Mantener hidratación constante  
-- Evitar exfoliaciones o tratamientos agresivos por unos días  
-- Seguir las recomendaciones del especialista</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/bbl.jpeg" alt="BB lips">
-      </div>
-      <div class="info">
-        <h3> BB Lips </h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Labios más hidratados y nutridos  
-- Color uniforme y efecto de “labios maquillados” natural  
-- Atenúa resequedad y pequeñas imperfecciones  
-- Mejora la textura y suavidad  
-- Resultado semipermanente con aspecto saludable</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector labial con SPF  
-- No aplicar maquillaje ni labiales pesados las primeras 24–48 h  
-- Mantener hidratación constante con bálsamos suaves  
-- Evitar comidas muy calientes o picantes inmediatamente después  
-- Seguir las recomendaciones del especialista</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/derma.jpeg" alt="Limpieza facial con demaplaning">
-      </div>
-      <div class="info">
-        <h3> Limpieza facial con demaplaning </h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Elimina células muertas y vello fino (peach fuzz)  
-- Mejora la textura y luminosidad de la piel  
-- Favorece la absorción de productos cosméticos  
-- Deja la piel más suave y uniforme  
-- Resultados inmediatos y sin tiempo de recuperación</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector solar  
-- No aplicar maquillaje pesado las primeras 24 h  
-- Mantener hidratación constante  
-- Evitar exfoliaciones o tratamientos agresivos por unos días  
-- Seguir las recomendaciones del especialista</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/vapoz.jpeg" alt="Vapor de ozono">
-      </div>
-      <div class="info">
-        <h3> Vapor de ozono</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Limpieza profunda de poros  
-- Eliminación de impurezas y exceso de grasa  
-- Hidratación y suavidad de la piel  
-- Estimula la circulación sanguínea  
-- Efecto relajante y preparación para otros tratamientos</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar exposición solar directa después de la sesión  
-- Usar protector solar diariamente  
-- Mantener hidratación constante  
-- No aplicar maquillaje pesado inmediatamente  
-- Seguir las recomendaciones del especialista</p>
-      </div>
-    </div>
-  </section>
+            <p>
+                <i class="fa-solid fa-leaf"></i>
+                Belleza, salud y bienestar en un mismo lugar
+            </p>
 
-  <section id="masajes">
-    <h2>💆 Masajes y Modelado Corporal</h2>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/relajante.jpeg" alt="Masaje relajante">
-      </div>
-      <div class="info">
-        <h3> Masaje relajante</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Reduce el estrés y la ansiedad  
-- Mejora la circulación sanguínea  
-- Relaja músculos y alivia tensiones  
-- Favorece el descanso y la calidad del sueño  
-- Sensación general de bienestar</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar comidas pesadas justo antes de la sesión  
-- Mantener buena hidratación después del masaje  
-- Descansar y no realizar esfuerzos físicos intensos inmediatamente  
-- Seguir las recomendaciones del terapeuta</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/masde.jpeg" alt="Masaje deportivo">
-      </div>
-      <div class="info">
-        <h3> Masaje deportivo</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Reduce la tensión muscular después del ejercicio  
-- Previene lesiones y favorece la recuperación  
-- Mejora la circulación y oxigenación de los tejidos  
-- Aumenta la flexibilidad y el rendimiento físico  
-- Alivia dolores musculares y contracturas</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar entrenamientos intensos justo después de la sesión  
-- Mantener buena hidratación para eliminar toxinas  
-- Descansar y permitir la recuperación muscular  
-- Seguir la frecuencia recomendada por el especialista  
-- Informar al terapeuta sobre lesiones o molestias previas</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/bra.jpeg" alt="Técnica de drenaje linfático brasileño con cierre de costilla">
-      </div>
-      <div class="info">
-        <h3> Técnica de drenaje linfático brasileño con cierre de costilla</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Reduce la retención de líquidos y la hinchazón  
-- Estimula la circulación linfática y sanguínea  
-- Moldea la silueta y define la zona abdominal  
-- Favorece la eliminación de toxinas  
-- Sensación de ligereza y bienestar inmediato  
-</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Mantener buena hidratación para potenciar el drenaje  
-- Evitar comidas muy pesadas justo antes o después de la sesión  
-- No realizar esfuerzos físicos intensos inmediatamente después  
-- Seguir la frecuencia recomendada por el especialista  
-- Informar al terapeuta sobre condiciones médicas previas</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/glu.jpeg" alt="Marcación abdominal y masaje moldeador de gluteos">
-      </div>
-      <div class="info">
-        <h3> Marcación abdominal y masaje moldeador de gluteos</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Define y resalta la zona abdominal  
-- Reduce líquidos y toxinas acumuladas  
-- Mejora la circulación y oxigenación  
-- Sensación de firmeza y tonificación inmediata  
-- Levanta y da forma a los glúteos  
-- Reduce celulitis y mejora la textura de la piel  
-- Estimula la circulación y el drenaje linfático  
-- Apariencia más firme y tonificada</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Mantener buena hidratación  
-- Evitar comidas pesadas justo antes o después  
-- No realizar esfuerzos físicos intensos inmediatamente  
-- Seguir la frecuencia indicada por el especialista</p>
-      </div>
-    </div>
-  </section>
+            <a
+                href="https://wa.me/50660841047"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                +506 6084-1047
+            </a>
 
-  <section id="tecnologia">
-    <h2>⚙️ Tecnología Estética</h2>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/cav.jpeg" alt="Cavitador">
-      </div>
-      <div class="info">
-        <h3> Cavitador</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Reduce grasa localizada sin cirugía  
-- Moldea y define la silueta  
-- Favorece la eliminación de toxinas y líquidos  
-- Mejora la apariencia de celulitis  
-- Resultados visibles desde pocas sesiones</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Mantener buena hidratación antes y después  
-- Evitar comidas muy grasas inmediatamente después  
-- No realizar ejercicio intenso justo tras la sesión  
-- Seguir la frecuencia indicada por el especialista  
-- Informar sobre condiciones médicas previas</p>
-      </div>
+        </div>
     </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/rad.jpeg" alt="Radiofrecuencia">
-      </div>
-      <div class="info">
-        <h3> Radiofrecuencia</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Estimula la producción de colágeno y elastina  
-- Mejora la firmeza y elasticidad de la piel  
-- Reduce líneas finas y arrugas  
-- Favorece la circulación y oxigenación de tejidos  
-- Efecto reafirmante y rejuvenecedor visible</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar exposición solar directa y usar protector solar  
-- Mantener hidratación constante  
-- No aplicar maquillaje pesado inmediatamente después  
-- Evitar tratamientos agresivos (peelings, láser) por unos días  
-- Seguir las recomendaciones del especialista</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/vac.jpeg" alt="Vacum">
-      </div>
-      <div class="info">
-        <h3> Vacum </h3>
-        <p class="beneficios"><strong>Beneficios:</strong> reduce grasa localizada, mejora circulación, disminuye celulitis, tonifica y reafirma la piel.</p>
-        <p class="cuidados"><strong>Cuidados:</strong> evitar sol directo, mantener hidratación, no exfoliar ni aplicar láser por una semana, seguir siempre las indicaciones del especialista. </p>
-      </div>
-    </div>
-  </section>
 
-  <section id="especiales">
-    <h2>🌸 Tratamientos Especiales</h2>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/exoestr.jpeg" alt="Antiestrías con ADN de salmón">
-      </div>
-      <div class="info">
-        <h3> Antiestrías con ADN de salmón</h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Regeneración celular profunda en zonas con estrías  
-- Estimula colágeno y elastina para mejorar firmeza  
-- Atenúa la apariencia de estrías recientes y antiguas  
-- Hidratación intensa y reparación de la piel dañada  
-- Mejora la textura y uniformidad cutánea</p>
-        <p class="cuidados"><strong>Cuidados:</strong> Evitar sol directo y usar protector solar  
-- Mantener hidratación constante con productos suaves  
-- No aplicar exfoliaciones ni tratamientos agresivos en la zona por unos días  
-- Seguir la frecuencia y pautas indicadas por el especialista  
-- Ser constante en las sesiones para mejores resultados</p>
-      </div>
-    </div>
-    <div class="tratamiento">
-      <div class="imagen">
-        <img src="tratamientos/exfc.jpeg" alt="Exfolicion corporal completa">
-      </div>
-      <div class="info">
-        <h3> Exfoliacion corporal completa </h3>
-        <p class="beneficios"><strong>Beneficios:</strong> Elimina células muertas y renueva la piel  
-- Mejora la textura y luminosidad  
-- Favorece la absorción de productos hidratantes y nutritivos  
-- Estimula la circulación sanguínea  
-- Sensación de suavidad y frescura inmediata</p>
-          <p class="cuidados"><strong>Cuidados:</strong> Evitar exposición solar directa y usar protector solar  
-- Mantener hidratación constante  
-- No aplicar productos agresivos (peelings fuertes, ácidos) en los días siguientes  
-- Seguir la frecuencia recomendada por el especialista  
-- Usar cremas nutritivas para prolongar el efecto </p>
-      </div>
-    </div>
-  </section>
-  
 
-  <section id="reservas">
-    <h2>📞 Reservas</h2>
-    <p>Reserva tu espacio al <strong>6084-1047</strong></p>
-    <p>O directamente en WhatsApp: <a href="https://wa.me/c/50660841047" target="_blank">Haz tu reserva aquí</a></p>
-  </section>
+    <!-- Encabezado -->
 
-  <footer>
-    <p>© 2026 NYSSA - Bienestar y Belleza - Derechos Reservados </p>
-    <p><a href
+    <header class="header" id="inicio">
+
+        <div class="header__container">
+
+            <a
+                href="#inicio"
+                class="brand"
+                aria-label="NYSSA - Inicio"
+            >
+                <img
+                    src="logo-nyssa.jpeg"
+                    alt="Logotipo de NYSSA Bienestar y Belleza"
+                    class="brand__logo"
+                >
+
+                <span class="brand__information">
+                    <strong>NYSSA</strong>
+                    <small>Bienestar & Belleza</small>
+                </span>
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-controls="navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <nav
+                class="navigation"
+                id="navigation"
+                aria-label="Navegación principal"
+            >
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#experiencia">Experiencia NYSSA</a>
+                <a href="#preguntas">Preguntas</a>
+
+                <a href="#reservar" class="navigation__button">
+                    Reservar cita
+                </a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Portada -->
+
+        <section class="hero">
+
+            <div class="hero__decoration hero__decoration--one"></div>
+            <div class="hero__decoration hero__decoration--two"></div>
+
+            <div class="hero__container">
+
+                <div class="hero__content">
+
+                    <p class="section-label">
+                        <span></span>
+                        Centro de bienestar y belleza
+                    </p>
+
+                    <h1>
+                        Tu mejor versión
+                        comienza con
+                        <em>sentirte bien.</em>
+                    </h1>
+
+                    <p class="hero__description">
+                        Creamos experiencias personalizadas para cuidar tu
+                        piel, armonizar tu cuerpo y regalarte el bienestar
+                        que mereces.
+                    </p>
+
+                    <div class="hero__buttons">
+
+                        <a
+                            href="#reservar"
+                            class="button button--primary"
+                        >
+                            Reservar valoración
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a
+                            href="#servicios"
+                            class="button button--secondary"
+                        >
+                            Explorar servicios
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero__benefits">
+
+                        <div>
+                            <i class="fa-solid fa-user-check"></i>
+                            <span>
+                                <strong>Atención personalizada</strong>
+                                Cada piel y cada cuerpo son diferentes
+                            </span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-spa"></i>
+                            <span>
+                                <strong>Ambiente de bienestar</strong>
+                                Un espacio creado para consentirte
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero__visual">
+
+                    <div class="hero__image-frame">
+
+                        <img
+                            src="tratamientos/relajante.jpeg"
+                            alt="Experiencia de bienestar y belleza en NYSSA"
+                        >
+
+                        <div class="hero__image-badge">
+                            <i class="fa-solid fa-heart"></i>
+
+                            <span>
+                                <strong>Bienestar integral</strong>
+                                Belleza que se siente
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="#nosotros" class="scroll-indicator">
+                <span>Descubre NYSSA</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+        </section>
+
+
+        <!-- Franja de beneficios -->
+
+        <section class="benefit-strip" aria-label="Beneficios de NYSSA">
+
+            <div class="benefit-strip__container">
+
+                <article>
+                    <i class="fa-solid fa-seedling"></i>
+
+                    <div>
+                        <strong>Atención cuidadosa</strong>
+                        <span>Tu bienestar es la prioridad</span>
+                    </div>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    <div>
+                        <strong>Tratamientos personalizados</strong>
+                        <span>Recomendados según tus necesidades</span>
+                    </div>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-shield-heart"></i>
+
+                    <div>
+                        <strong>Acompañamiento profesional</strong>
+                        <span>Antes, durante y después de tu sesión</span>
+                    </div>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <div>
+                        <strong>Reservas por WhatsApp</strong>
+                        <span>Comunicación sencilla y directa</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Nosotros -->
+
+        <section class="about section" id="nosotros">
+
+            <div class="section__container about__container">
+
+                <div class="about__images">
+
+                    <div class="about__image about__image--main">
+                        <img
+                            src="tratamientos/logo.jpeg"
+                            alt="NYSSA Bienestar y Belleza"
+                        >
+                    </div>
+
+                    <div class="about__image about__image--secondary">
+                        <img
+                            src="tratamientos/alta.jpeg"
+                            alt="Tratamientos de bienestar en NYSSA"
+                        >
+                    </div>
+
+                    <div class="about__experience">
+                        <strong>NYSSA</strong>
+                        <span>Cuidamos de ti</span>
+                    </div>
+
+                </div>
+
+
+                <div class="about__content">
+
+                    <p class="section-label">
+                        <span></span>
+                        Conoce nuestro centro
+                    </p>
+
+                    <h2>
+                        Belleza con propósito,
+                        bienestar con corazón.
+                    </h2>
+
+                    <p>
+                        En NYSSA creemos que cuidarte no es un lujo, sino una
+                        forma de reconectar contigo. Cada experiencia combina
+                        atención personalizada, bienestar y procedimientos
+                        seleccionados según tus necesidades.
+                    </p>
+
+                    <p>
+                        Queremos que cada visita sea una pausa para respirar,
+                        renovarte y salir sintiéndote más segura, ligera y
+                        conectada con tu mejor versión.
+                    </p>
+
+                    <div class="about__values">
+
+                        <article>
+                            <i class="fa-solid fa-heart"></i>
+
+                            <div>
+                                <h3>Atención humana</h3>
+                                <p>Escuchamos tus objetivos y necesidades.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <i class="fa-solid fa-leaf"></i>
+
+                            <div>
+                                <h3>Bienestar integral</h3>
+                                <p>Cuidamos cómo te ves y cómo te sientes.</p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <a
+                        href="#reservar"
+                        class="text-link"
+                    >
+                        Agenda tu valoración
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="section__container mission-vision">
+
+                <article>
+                    <span class="mission-vision__number">01</span>
+                    <i class="fa-solid fa-bullseye"></i>
+
+                    <h3>Nuestra misión</h3>
+
+                    <p>
+                        Brindar experiencias de bienestar y belleza
+                        personalizadas, mediante una atención cálida,
+                        responsable y enfocada en las necesidades de cada
+                        persona.
+                    </p>
+                </article>
+
+                <article>
+                    <span class="mission-vision__number">02</span>
+                    <i class="fa-solid fa-eye"></i>
+
+                    <h3>Nuestra visión</h3>
+
+                    <p>
+                        Ser un centro reconocido por su atención humana,
+                        calidad, innovación y capacidad de hacer que cada
+                        cliente se sienta valorado y cuidado.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Categorías de servicios -->
+
+        <section class="services section" id="servicios">
+
+            <div class="section__container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-label">
+                            <span></span>
+                            Nuestros servicios
+                        </p>
+
+                        <h2>
+                            Un tratamiento para
+                            cada momento de ti.
+                        </h2>
+                    </div>
+
+                    <p>
+                        Explora nuestras categorías y encuentra una experiencia
+                        pensada para tus objetivos de bienestar, cuidado facial
+                        y armonía corporal.
+                    </p>
+
+                </div>
+
+
+                <div class="category-buttons">
+
+                    <button
+                        type="button"
+                        class="category-button category-button--active"
+                        data-category="todos"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="bienestar"
+                    >
+                        Bienestar
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="facial"
+                    >
+                        Faciales
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="masaje"
+                    >
+                        Masajes
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="tecnologia"
+                    >
+                        Tecnología estética
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="especial"
+                    >
+                        Especiales
+                    </button>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <!-- Bienestar -->
+
+                    <article
+                        class="service-card"
+                        data-category="bienestar"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/desio.jpeg"
+                                alt="Sesión de bienestar y relajación para los pies"
+                                loading="lazy"
+                            >
+
+                            <span>Bienestar</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Bienestar iónico para pies</h3>
+
+                            <p>
+                                Una experiencia de relajación diseñada para
+                                brindar descanso, ligereza y una agradable
+                                sensación de bienestar general.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Relajación y descanso
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de ligereza
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Momento de autocuidado
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Bienestar iónico para pies"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Faciales -->
+
+                    <article
+                        class="service-card"
+                        data-category="facial"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/alta.jpeg"
+                                alt="Tratamiento facial de alta frecuencia"
+                                loading="lazy"
+                            >
+
+                            <span>Facial</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Alta frecuencia facial</h3>
+
+                            <p>
+                                Complemento facial que ayuda a mejorar la
+                                apariencia, luminosidad y sensación de frescura
+                                de la piel.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Cuidado de la apariencia de la piel
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de frescura
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Complemento de limpieza facial
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Alta frecuencia facial"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="facial"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/exo.jpeg"
+                                alt="Tratamiento facial regenerador"
+                                loading="lazy"
+                            >
+
+                            <span>Facial premium</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Exosomas y ADN de salmón</h3>
+
+                            <p>
+                                Experiencia facial enfocada en hidratación,
+                                cuidado de la apariencia y renovación visible
+                                de la piel.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Apariencia revitalizada
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Hidratación
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de suavidad
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Exosomas y ADN de salmón"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="facial"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/micro.jpeg"
+                                alt="Tratamiento facial con microagujas"
+                                loading="lazy"
+                            >
+
+                            <span>Facial</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Microagujas</h3>
+
+                            <p>
+                                Procedimiento estético para mejorar visualmente
+                                la textura, uniformidad y apariencia general
+                                de la piel.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Mejora visual de la textura
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Apariencia más uniforme
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Valoración previa
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Microagujas"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="facial"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/bbg.jpeg"
+                                alt="Tratamiento facial BB Glow"
+                                loading="lazy"
+                            >
+
+                            <span>Facial</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>BB Glow</h3>
+
+                            <p>
+                                Tratamiento estético pensado para aportar una
+                                apariencia más luminosa, cuidada y uniforme.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Efecto visual luminoso
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Apariencia uniforme
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Cuidado personalizado
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="BB Glow"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="facial"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/bbl.jpeg"
+                                alt="Tratamiento BB Lips"
+                                loading="lazy"
+                            >
+
+                            <span>Labios</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>BB Lips</h3>
+
+                            <p>
+                                Experiencia de cuidado labial enfocada en
+                                hidratación, suavidad y una apariencia de color
+                                más uniforme.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Hidratación labial
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Apariencia saludable
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de suavidad
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="BB Lips"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="facial"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/derma.jpeg"
+                                alt="Limpieza facial con dermaplaning"
+                                loading="lazy"
+                            >
+
+                            <span>Facial</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Limpieza con dermaplaning</h3>
+
+                            <p>
+                                Limpieza facial que retira células superficiales
+                                y vello fino para dejar una sensación de mayor
+                                suavidad.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de suavidad
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Apariencia luminosa
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Cuidado facial completo
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Limpieza facial con dermaplaning"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="facial"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/vapoz.jpeg"
+                                alt="Vapor de ozono facial"
+                                loading="lazy"
+                            >
+
+                            <span>Facial</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Vapor de ozono</h3>
+
+                            <p>
+                                Complemento para preparar la piel y favorecer
+                                una experiencia de limpieza facial agradable
+                                y relajante.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Preparación de la piel
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de limpieza
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Experiencia relajante
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Vapor de ozono"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Masajes -->
+
+                    <article
+                        class="service-card"
+                        data-category="masaje"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/relajante.jpeg"
+                                alt="Masaje relajante"
+                                loading="lazy"
+                            >
+
+                            <span>Masajes</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Masaje relajante</h3>
+
+                            <p>
+                                Una pausa dedicada a disminuir tensiones y
+                                recuperar una agradable sensación de calma
+                                y bienestar.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Relajación
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Alivio de tensiones
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de descanso
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Masaje relajante"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="masaje"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/masde.jpeg"
+                                alt="Masaje deportivo"
+                                loading="lazy"
+                            >
+
+                            <span>Masajes</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Masaje deportivo</h3>
+
+                            <p>
+                                Masaje dirigido a personas activas que desean
+                                atender tensión y fatiga muscular después de
+                                la actividad física.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Atención de tensión muscular
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Recuperación posterior al ejercicio
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Valoración de molestias
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Masaje deportivo"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="masaje"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/bra.jpeg"
+                                alt="Drenaje linfático brasileño"
+                                loading="lazy"
+                            >
+
+                            <span>Modelado corporal</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Drenaje linfático brasileño</h3>
+
+                            <p>
+                                Técnica manual enfocada en brindar sensación de
+                                ligereza y mejorar visualmente la definición
+                                corporal.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de ligereza
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Modelado visual
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Atención personalizada
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Drenaje linfático brasileño"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="masaje"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/glu.jpeg"
+                                alt="Marcación abdominal y masaje moldeador"
+                                loading="lazy"
+                            >
+
+                            <span>Modelado corporal</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Marcación abdominal y glúteos</h3>
+
+                            <p>
+                                Masaje moldeador orientado a mejorar visualmente
+                                la definición del abdomen y la apariencia de
+                                los glúteos.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Definición visual
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Modelado corporal
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de firmeza
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Marcación abdominal y masaje moldeador de glúteos"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Tecnología estética -->
+
+                    <article
+                        class="service-card"
+                        data-category="tecnologia"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/cav.jpeg"
+                                alt="Tratamiento corporal de cavitación"
+                                loading="lazy"
+                            >
+
+                            <span>Tecnología estética</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Cavitación estética</h3>
+
+                            <p>
+                                Tecnología estética utilizada como complemento
+                                en procesos de modelado y cuidado de la
+                                apariencia corporal.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Modelado corporal
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Atención de zonas específicas
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Valoración previa
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Cavitación estética"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="tecnologia"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/rad.jpeg"
+                                alt="Radiofrecuencia estética"
+                                loading="lazy"
+                            >
+
+                            <span>Tecnología estética</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Radiofrecuencia</h3>
+
+                            <p>
+                                Tecnología estética orientada al cuidado de
+                                la apariencia, textura y sensación de firmeza
+                                de la piel.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Apariencia más firme
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Cuidado de la textura
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Uso facial o corporal
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Radiofrecuencia"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="tecnologia"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/vac.jpeg"
+                                alt="Tratamiento corporal con vacum"
+                                loading="lazy"
+                            >
+
+                            <span>Tecnología estética</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Vacumterapia</h3>
+
+                            <p>
+                                Técnica estética utilizada como complemento
+                                para el modelado corporal y cuidado visual de
+                                la piel.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Modelado visual
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Cuidado corporal
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Plan personalizado
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Vacumterapia"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Especiales -->
+
+                    <article
+                        class="service-card"
+                        data-category="especial"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/exoestr.jpeg"
+                                alt="Tratamiento para la apariencia de estrías"
+                                loading="lazy"
+                            >
+
+                            <span>Especial</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Cuidado antiestrías</h3>
+
+                            <p>
+                                Tratamiento con ADN de salmón orientado al
+                                cuidado de la textura y apariencia de zonas
+                                con estrías.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Cuidado de la textura
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Hidratación
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Plan por sesiones
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Tratamiento antiestrías con ADN de salmón"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+
+                    <article
+                        class="service-card"
+                        data-category="especial"
+                    >
+                        <div class="service-card__image">
+
+                            <img
+                                src="tratamientos/exfc.jpeg"
+                                alt="Exfoliación corporal completa"
+                                loading="lazy"
+                            >
+
+                            <span>Especial</span>
+                        </div>
+
+                        <div class="service-card__content">
+
+                            <h3>Exfoliación corporal completa</h3>
+
+                            <p>
+                                Experiencia de renovación para retirar células
+                                superficiales y dejar una sensación de mayor
+                                suavidad y frescura.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Sensación de suavidad
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Apariencia renovada
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Cuidado integral
+                                </li>
+                            </ul>
+
+                            <button
+                                type="button"
+                                class="service-card__button"
+                                data-service="Exfoliación corporal completa"
+                            >
+                                Consultar tratamiento
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Experiencia NYSSA -->
+
+        <section class="experience section" id="experiencia">
+
+            <div class="section__container experience__container">
+
+                <div class="experience__content">
+
+                    <p class="section-label">
+                        <span></span>
+                        La experiencia NYSSA
+                    </p>
+
+                    <h2>
+                        Mucho más que una sesión de belleza.
+                    </h2>
+
+                    <p>
+                        Desde que reservas hasta que finaliza tu tratamiento,
+                        queremos que te sientas escuchada, acompañada y
+                        completamente atendida.
+                    </p>
+
+
+                    <div class="experience__steps">
+
+                        <article>
+                            <span>01</span>
+
+                            <div>
+                                <h3>Escuchamos tus objetivos</h3>
+
+                                <p>
+                                    Nos cuentas qué deseas mejorar y cuáles
+                                    son tus expectativas.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <span>02</span>
+
+                            <div>
+                                <h3>Valoramos tus necesidades</h3>
+
+                                <p>
+                                    Revisamos cuál tratamiento puede adaptarse
+                                    mejor a tu situación.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <span>03</span>
+
+                            <div>
+                                <h3>Personalizamos tu experiencia</h3>
+
+                                <p>
+                                    Te explicamos el procedimiento, los cuidados
+                                    y el plan recomendado.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <span>04</span>
+
+                            <div>
+                                <h3>Te acompañamos</h3>
+
+                                <p>
+                                    Mantenemos una comunicación clara para
+                                    atender tus dudas.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <div class="experience__visual">
+
+                    <img
+                        src="tratamientos/bra.jpeg"
+                        alt="Experiencia personalizada en NYSSA"
+                        loading="lazy"
+                    >
+
+                    <div class="experience__quote">
+                        <i class="fa-solid fa-quote-left"></i>
+
+                        <p>
+                            Regálate el tiempo, el cuidado y la atención
+                            que también mereces.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Cuidados -->
+
+        <section class="care section">
+
+            <div class="section__container care__container">
+
+                <div>
+
+                    <p class="section-label">
+                        <span></span>
+                        Cuidado responsable
+                    </p>
+
+                    <h2>
+                        Tu seguridad también forma parte de la belleza.
+                    </h2>
+
+                </div>
+
+
+                <div class="care__content">
+
+                    <p>
+                        Antes de ciertos tratamientos realizamos preguntas
+                        básicas para identificar condiciones que deban
+                        considerarse. Los resultados pueden variar según cada
+                        persona, sus hábitos y la constancia del plan.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Informa sobre embarazo, marcapasos, lesiones,
+                            alergias o condiciones médicas.
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Sigue las indicaciones brindadas antes y después
+                            de cada sesión.
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Mantén una adecuada hidratación y protección solar
+                            cuando corresponda.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Preguntas frecuentes -->
+
+        <section class="faq section" id="preguntas">
+
+            <div class="section__container faq__container">
+
+                <div class="faq__introduction">
+
+                    <p class="section-label">
+                        <span></span>
+                        Resolvemos tus dudas
+                    </p>
+
+                    <h2>Preguntas frecuentes.</h2>
+
+                    <p>
+                        Queremos que reserves con tranquilidad y conozcas
+                        claramente cómo funciona la atención en NYSSA.
+                    </p>
+
+                    <a href="#reservar" class="text-link">
+                        Hacer otra consulta
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="faq__list">
+
+                    <article class="faq-item faq-item--active">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="true"
+                        >
+                            <span>¿Cómo sé cuál tratamiento necesito?</span>
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Cuéntanos qué deseas mejorar. Revisaremos tus
+                                objetivos y te orientaremos sobre las opciones
+                                que podrían ajustarse mejor a tus necesidades.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>¿Debo reservar con anticipación?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Sí. Trabajamos mediante citas para preparar
+                                adecuadamente tu experiencia y brindarte una
+                                atención personalizada.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>¿Cuándo comenzaré a notar cambios?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Depende del tratamiento y de cada persona.
+                                Algunas experiencias producen cambios visuales
+                                inmediatos, mientras otras requieren varias
+                                sesiones y constancia.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>¿Todos los tratamientos son aptos para mí?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                No necesariamente. Por eso preguntamos sobre
+                                condiciones relevantes antes de recomendar
+                                ciertos procedimientos.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>¿Cómo puedo reservar?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Puedes completar el formulario de esta página
+                                o escribir directamente al WhatsApp
+                                +506 6084-1047.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Formulario de reservas -->
+
+        <section class="booking section" id="reservar">
+
+            <div class="section__container booking__container">
+
+                <div class="booking__information">
+
+                    <p class="section-label">
+                        <span></span>
+                        Tu momento comienza aquí
+                    </p>
+
+                    <h2>
+                        Cuéntanos cómo podemos consentirte.
+                    </h2>
+
+                    <p>
+                        Completa tus datos y prepararemos automáticamente un
+                        mensaje de WhatsApp. Podrás revisarlo antes de enviarlo.
+                    </p>
+
+
+                    <div class="booking__contact">
+
+                        <a
+                            href="https://wa.me/50660841047?text=Hola%20NYSSA%2C%20deseo%20recibir%20informaci%C3%B3n%20sobre%20sus%20tratamientos."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            <span>
+                                <small>WhatsApp</small>
+                                +506 6084-1047
+                            </span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="booking__privacy">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <div>
+                            <strong>Información privada</strong>
+
+                            <span>
+                                Tus datos se utilizarán únicamente para
+                                atender esta solicitud.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form class="booking-form" id="bookingForm">
+
+                    <div class="form-heading">
+                        <span>Solicitud de valoración</span>
+                        <strong>Reserva tu experiencia</strong>
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="clientName">
+                                Nombre completo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="clientName"
+                                name="clientName"
+                                placeholder="Escribe tu nombre"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="clientPhone">
+                                Teléfono
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="clientPhone"
+                                name="clientPhone"
+                                placeholder="Ejemplo: 8888-8888"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="selectedService">
+                            Tratamiento de interés
+                        </label>
+
+                        <select
+                            id="selectedService"
+                            name="selectedService"
+                            required
+                        >
+                            <option value="" selected disabled>
+                                Selecciona un tratamiento
+                            </option>
+
+                            <optgroup label="Bienestar">
+                                <option>Bienestar iónico para pies</option>
+                            </optgroup>
+
+                            <optgroup label="Tratamientos faciales">
+                                <option>Alta frecuencia facial</option>
+                                <option>Exosomas y ADN de salmón</option>
+                                <option>Microagujas</option>
+                                <option>BB Glow</option>
+                                <option>BB Lips</option>
+                                <option>Limpieza facial con dermaplaning</option>
+                                <option>Vapor de ozono</option>
+                            </optgroup>
+
+                            <optgroup label="Masajes y modelado">
+                                <option>Masaje relajante</option>
+                                <option>Masaje deportivo</option>
+                                <option>Drenaje linfático brasileño</option>
+                                <option>Marcación abdominal y glúteos</option>
+                            </optgroup>
+
+                            <optgroup label="Tecnología estética">
+                                <option>Cavitación estética</option>
+                                <option>Radiofrecuencia</option>
+                                <option>Vacumterapia</option>
+                            </optgroup>
+
+                            <optgroup label="Tratamientos especiales">
+                                <option>Cuidado antiestrías</option>
+                                <option>Exfoliación corporal completa</option>
+                            </optgroup>
+
+                            <option>Necesito asesoría para elegir</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="preferredDay">
+                                Día de preferencia
+                            </label>
+
+                            <select
+                                id="preferredDay"
+                                name="preferredDay"
+                                required
+                            >
+                                <option value="" selected disabled>
+                                    Selecciona un día
+                                </option>
+
+                                <option>Lunes</option>
+                                <option>Martes</option>
+                                <option>Miércoles</option>
+                                <option>Jueves</option>
+                                <option>Viernes</option>
+                                <option>Sábado</option>
+                                <option>Horario por coordinar</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="preferredTime">
+                                Horario de preferencia
+                            </label>
+
+                            <select
+                                id="preferredTime"
+                                name="preferredTime"
+                                required
+                            >
+                                <option value="" selected disabled>
+                                    Selecciona un horario
+                                </option>
+
+                                <option>Mañana</option>
+                                <option>Mediodía</option>
+                                <option>Tarde</option>
+                                <option>Horario por coordinar</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="clientMessage">
+                            ¿Qué te gustaría mejorar o consultar?
+                        </label>
+
+                        <textarea
+                            id="clientMessage"
+                            name="clientMessage"
+                            rows="5"
+                            placeholder="Cuéntanos brevemente cuáles son tus objetivos o dudas..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <label class="form-checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="privacyConsent"
+                            required
+                        >
+
+                        <span>
+                            Acepto que NYSSA utilice estos datos para
+                            contactarme y atender mi solicitud.
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="button button--primary booking-form__button"
+                    >
+                        Enviar solicitud por WhatsApp
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+
+
+                    <p
+                        class="form-message"
+                        id="formMessage"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pie de página -->
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <div class="footer__brand">
+
+                <a href="#inicio" class="brand">
+
+                    <img
+                        src="logo-nyssa.jpeg"
+                        alt="NYSSA Bienestar y Belleza"
+                        class="brand__logo"
+                    >
+
+                    <span class="brand__information">
+                        <strong>NYSSA</strong>
+                        <small>Bienestar & Belleza</small>
+                    </span>
+
+                </a>
+
+                <p>
+                    Resalta tu belleza, cuida tu bienestar y siéntete
+                    renovada en cada sesión.
+                </p>
+
+            </div>
+
+
+            <div class="footer__links">
+
+                <h3>Explora</h3>
+
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#preguntas">Preguntas frecuentes</a>
+
+            </div>
+
+
+            <div class="footer__links">
+
+                <h3>Servicios</h3>
+
+                <a href="#servicios">Tratamientos faciales</a>
+                <a href="#servicios">Masajes</a>
+                <a href="#servicios">Modelado corporal</a>
+                <a href="#servicios">Tecnología estética</a>
+
+            </div>
+
+
+            <div class="footer__contact">
+
+                <h3>Reservas</h3>
+
+                <a
+                    href="https://wa.me/50660841047"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +506 6084-1047
+                </a>
+
+                <a href="#reservar">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Solicitar una cita
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer__bottom">
+
+            <p>
+                © <span id="currentYear">2026</span>
+                NYSSA Bienestar & Belleza. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Los resultados pueden variar según cada persona.
+                Los servicios están sujetos a valoración.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Botón flotante de WhatsApp -->
+
+    <a
+        href="https://wa.me/50660841047?text=Hola%20NYSSA%2C%20deseo%20recibir%20informaci%C3%B3n%20sobre%20sus%20tratamientos."
+        class="floating-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar a NYSSA mediante WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Reserva tu cita</span>
+    </a>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        /* Menú móvil */
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navigation = document.getElementById("navigation");
+
+        menuToggle.addEventListener("click", function () {
+
+            const menuIsOpen = navigation.classList.toggle(
+                "navigation--active"
+            );
+
+            menuToggle.classList.toggle(
+                "menu-toggle--active",
+                menuIsOpen
+            );
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                menuIsOpen
+            );
+
+        });
+
+
+        navigation.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navigation.classList.remove("navigation--active");
+                menuToggle.classList.remove("menu-toggle--active");
+                menuToggle.setAttribute("aria-expanded", "false");
+
+            });
+
+        });
+
+
+        /* Filtros de servicios */
+
+        const categoryButtons = document.querySelectorAll(
+            ".category-button"
+        );
+
+        const serviceCards = document.querySelectorAll(
+            ".service-card"
+        );
+
+        categoryButtons.forEach(function (button) {
+
+            button.addEventListener("click", function () {
+
+                const selectedCategory =
+                    button.getAttribute("data-category");
+
+                categoryButtons.forEach(function (currentButton) {
+                    currentButton.classList.remove(
+                        "category-button--active"
+                    );
+                });
+
+                button.classList.add("category-button--active");
+
+                serviceCards.forEach(function (card) {
+
+                    const cardCategory =
+                        card.getAttribute("data-category");
+
+                    if (
+                        selectedCategory === "todos" ||
+                        cardCategory === selectedCategory
+                    ) {
+                        card.classList.remove("service-card--hidden");
+                    } else {
+                        card.classList.add("service-card--hidden");
+                    }
+
+                });
+
+            });
+
+        });
+
+
+        /* Selección automática del servicio */
+
+        const serviceButtons = document.querySelectorAll(
+            ".service-card__button"
+        );
+
+        const selectedService = document.getElementById(
+            "selectedService"
+        );
+
+        serviceButtons.forEach(function (button) {
+
+            button.addEventListener("click", function () {
+
+                const serviceName =
+                    button.getAttribute("data-service");
+
+                selectedService.value = serviceName;
+
+                document
+                    .getElementById("reservar")
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+            });
+
+        });
+
+
+        /* Preguntas frecuentes */
+
+        const faqQuestions = document.querySelectorAll(
+            ".faq-question"
+        );
+
+        faqQuestions.forEach(function (question) {
+
+            question.addEventListener("click", function () {
+
+                const currentItem = question.closest(".faq-item");
+                const currentIcon = question.querySelector("i");
+
+                const isOpen = currentItem.classList.contains(
+                    "faq-item--active"
+                );
+
+                document.querySelectorAll(".faq-item").forEach(
+                    function (item) {
+
+                        item.classList.remove("faq-item--active");
+
+                        const button =
+                            item.querySelector(".faq-question");
+
+                        const icon =
+                            item.querySelector(".faq-question i");
+
+                        button.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                        icon.classList.remove("fa-minus");
+                        icon.classList.add("fa-plus");
+
+                    }
+                );
+
+                if (!isOpen) {
+
+                    currentItem.classList.add("faq-item--active");
+
+                    question.setAttribute(
+                        "aria-expanded",
+                        "true"
+                    );
+
+                    currentIcon.classList.remove("fa-plus");
+                    currentIcon.classList.add("fa-minus");
+
+                }
+
+            });
+
+        });
+
+
+        /* Formulario conectado con WhatsApp */
+
+        const bookingForm = document.getElementById("bookingForm");
+        const formMessage = document.getElementById("formMessage");
+
+        bookingForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            if (!bookingForm.checkValidity()) {
+                bookingForm.reportValidity();
+                return;
+            }
+
+            const whatsappNumber = "50660841047";
+
+            const clientName = document
+                .getElementById("clientName")
+                .value
+                .trim();
+
+            const clientPhone = document
+                .getElementById("clientPhone")
+                .value
+                .trim();
+
+            const service = document
+                .getElementById("selectedService")
+                .value;
+
+            const preferredDay = document
+                .getElementById("preferredDay")
+                .value;
+
+            const preferredTime = document
+                .getElementById("preferredTime")
+                .value;
+
+            const clientMessage = document
+                .getElementById("clientMessage")
+                .value
+                .trim();
+
+            let whatsappMessage =
+                "Hola, deseo solicitar una valoración en NYSSA." +
+                "\n\n*Nombre:* " + clientName +
+                "\n*Teléfono:* " + clientPhone +
+                "\n*Tratamiento de interés:* " + service +
+                "\n*Día de preferencia:* " + preferredDay +
+                "\n*Horario de preferencia:* " + preferredTime;
+
+            if (clientMessage !== "") {
+
+                whatsappMessage +=
+                    "\n\n*Consulta u objetivos:*" +
+                    "\n" + clientMessage;
+
+            }
+
+            whatsappMessage +=
+                "\n\nEste mensaje fue generado desde el sitio web de NYSSA.";
+
+            const whatsappURL =
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                encodeURIComponent(whatsappMessage);
+
+            formMessage.textContent =
+                "Abriendo WhatsApp para completar tu solicitud...";
+
+            formMessage.classList.add(
+                "form-message--visible"
+            );
+
+            const whatsappWindow = window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+            if (!whatsappWindow) {
+                window.location.href = whatsappURL;
+            }
+
+        });
+
+
+        /* Año automático */
+
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+
+</html>
